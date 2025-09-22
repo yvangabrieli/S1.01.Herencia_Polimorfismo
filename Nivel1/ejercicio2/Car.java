@@ -1,4 +1,4 @@
-package Ejercicio2;
+package ejercicio2;
 
 public class Car {
     public static final String brand = "Toyota";

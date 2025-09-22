@@ -1,14 +1,14 @@
-package Ejercicio1;
+package ejercicio1;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Instrument Wind1 = new Wind("Flute", 475.45) {
+        Instrument wind1 = new Wind("Flute", 475.45) {
         };
-        System.out.println(Wind1);
-        Wind1.play();
+        System.out.println(wind1);
+        wind1.play();
         List<Instrument> band = new ArrayList<>();
         band.add(new Wind("Flute", 475.45));
         band.add(new Percussion("Drum", (double)1450.5F));

@@ -1,4 +1,4 @@
-package Ejercicio1;
+package ejercicio1;
 
 public class Wind extends Instrument {
     public Wind(String name, double price) {

@@ -1,4 +1,4 @@
-package Ejercicio1;
+package ejercicio1;
 
 public class StringInstrument extends Instrument {
     public StringInstrument(String name, double price) {

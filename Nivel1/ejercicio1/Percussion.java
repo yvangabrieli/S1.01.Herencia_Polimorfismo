@@ -1,4 +1,4 @@
-package Ejercicio1;
+package ejercicio1;
 
 public class Percussion extends Instrument {
     // Se muestra cuando se carga la clase y solo una vez
