@@ -1,10 +1,10 @@
-package Ejercicio1;
+package ejercicio1;
 
-public class Product {
+public abstract class Instrument {
     private String name;
     private double price;
 
-    public Product(String name, double price) {
+    public Instrument(String name, double price) {
         this.name = name;
         this.price = price;
     }
@@ -13,19 +13,22 @@ public class Product {
         return this.name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public double getPrice() {
         return this.price;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setPrice(double price) {
         this.price = price;
     }
 
+    public abstract void play();
+
+    @Override
     public String toString() {
-        return "Product: name = " + this.name + ", price = " + this.price + ".";
+        return "The Instrument is " + getName() + ", and the price is " + getPrice() + " .";
     }
 }

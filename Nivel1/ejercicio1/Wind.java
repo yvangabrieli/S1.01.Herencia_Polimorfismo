@@ -1,4 +1,4 @@
-package Ejercicio1;
+package ejercicio1;
 
 public class Wind extends Instrument {
     public Wind(String name, double price) {
@@ -7,5 +7,10 @@ public class Wind extends Instrument {
 
     public void play() {
         System.out.println("A Wind is playing");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
