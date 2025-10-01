@@ -2,7 +2,7 @@ package ejercicio2;
 
 public class Car {
     public static final String brand = "Toyota";
-    public static String model = "CHR";
+    public static final String model = "CHR";
     public final int power;
 
     public Car(int power) {
