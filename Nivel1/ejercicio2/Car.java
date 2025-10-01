@@ -1,15 +1,19 @@
 package ejercicio2;
 
 public class Car {
-    public static final String brand = "Toyota";
-    public static final String model = "CHR";
+    public static final String BRAND = "Toyota";
+    public static final String MODEL = "CHR";
     public final int power;
 
     public Car(int power) {
-        this.power = power;
+        if (power > 0) {
+            this.power = power;
+        } else {
+            throw new IllegalArgumentException();
+        }
     }
 
-    public static String toBreak() {
+    public static String toBrake() {
         return " \nThe car is Stop";
     }
 
@@ -17,7 +21,8 @@ public class Car {
         return "\nThe car is Speeding up";
     }
 
+    @Override
     public String toString() {
-        return "The Toyota (" + model + ") have " + this.power + " of power.";
+        return BRAND + "(" + MODEL + ") have " + this.power + " of power.";
     }
 }

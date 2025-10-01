@@ -6,8 +6,8 @@ public class Main {
         Car auto2 = new Car(300);
         Car auto3 = new Car(350);
 
-        System.out.println(auto + " " + auto.toSpeed());
-        System.out.println(auto2 + " " + auto2.toSpeed());
-        System.out.print(auto3 + Car.toBreak());
+        System.out.println(auto + auto.toSpeed());
+        System.out.println(auto2 + auto2.toSpeed());
+        System.out.print(auto3 + Car.toBrake());
     }
 }

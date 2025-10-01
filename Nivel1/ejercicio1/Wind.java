@@ -8,4 +8,9 @@ public class Wind extends Instrument {
     public void play() {
         System.out.println("A Wind is playing");
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
